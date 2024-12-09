@@ -5,42 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="adobe-portfolio8664.ico" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+
+    <div id="preloader"></div>
+    <div class="big-wrapper">  
     <header >
         <div class="logo"><span>Shr</span>eyas.</div>
         <ul class="navlist">
             <li><a href="#home" style="--i:1">Home</a></li>
             <li><a href="#about" style="--i:2">About</a></li>
-            <li><a href="#services" style="--i:3">Services</a></li>
+            <li><a href="#services" style="--i:3">Role</a></li>
             <li><a href="#skills" style="--i:4">Skills</a></li>
             <li><a href="#portfolio" style="--i:5">Portfolio</a></li>
             <li><a href="#contact" style="--i:6">Contact</a></li>
         </ul>
         <div id="menu-icon" class="bx bx-menu"></div>
+        <div class="dark-mode dark" onclick="myFunction()">
+            <span class="dark-mode-btn">
+                <i class='bx bx-moon'></i>
+            </span>
+          </div>
     </header>
     <!-- home section -->
      <section id="home" class="home">
         <div class="home-content scroll-scale">
             <h1>Hi! I'm Shreyas Kawale</h1>
-            <div class="change-text">
+            <div class="change-text am">
                 <h3>And I'm</h3>
                 <h3>
-                    <span class="word">Web Developer</span>
+                    <span class="word">Full-Stack &nbsp;Developer</span>
+                     <span class="word">Front-End&nbsp; Developer</span> 
+                    <span class="word">Database&nbsp; Manager</span> 
+                     <span class="word">Software&nbsp; Tester</span> 
+
                     <!-- <span class="word"></span> -->
                 </h3> 
             </div>
-            <p>Product designer and digital creative director working in design field for 10 years so far.specialized in UI/UX, Branding and digital designs</p>
+            <p> A passionate Full Stack Developer 🚀.
+                I am a self motivated, hardworking student with a positive attitude and I am able to work well 
+                in a team environment.I have the ability to multitask effectively and I have a strong sense of time management.</p>
             <div class="info-box">
                 <div class="email-info">
                     <h5>Email :</h5>
                     <span>shreyaskawale42@gmail.com</span>
                 </div>
-                <!-- <div class="behance-info">
-                    <h5>Behance :</h5>
-                    <span>behance.net/shreyas</span>
-                </div> -->
+               
             </div>
             <div class="btn-box">
                 <a href="ShreyasKawale.pdf" download="Shreyas Kawale Resume" class="btn">Download CV</a>
@@ -55,7 +67,7 @@
         </div>
         <div class="home-image scroll-scale">
             <div class="img-box">
-                <img src="images--main/Photoroom-20241016_201220.png" alt="">
+                <img src="images--main/main4.png" alt="">
             </div>
             <div class="liquid-shape">
                 <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
@@ -109,13 +121,13 @@
      <!-- about section -->
       <section id="about" class="about">
         <div class="img-about scroll-scale">
-            <img src="images--main/about-me-pic2.png" alt="">
+            <img src="images--main/Aboutmy.png" alt="">
             <div class="info-about1">
                 <span>fresher</span>
                 <p></p>
             </div>
             <div class="info-about2">
-                <span>3</span>
+                <span>6</span>
                 <p>Projects completed</p>
             </div>
             <div class="info-about3">
@@ -127,50 +139,79 @@
         <div class="about-content scroll-scale">
             <span>Let me introduce myself</span>
             <h2>About Me</h2>
-<<<<<<< HEAD
             <h3>About Myself</h3>
-=======
-            <h3>A story of good</h3>
->>>>>>> e8a8fdf951e921dc3ef386d283565be22569b0b0
-            <p>Hello My Name is Shreyas Kawale I stayed in Kharghar and I have completed my Bachelor's Degree in year 2024</p>
+            <p>My Name is Shreyas Kawale I stayed in Kharghar and I have completed my Bachelor's Degree in year 2024
+                and I currently pursuing a Full-Stack Web-development in Dot Net and I completed 4 Minor Projects and 2 Major
+                Projects that helps to increase my knowledge.<br><br>
+                <h3>Education</h3><br>
+                <h4 class="degree">Bsc Information Technology 2024</h4><br>
+                <h5 class="University">Mumbai University 7.27 CGPA</h5><hr>&nbsp;
+                <h4 class="degree">HSC 2021</h4><br>
+                <h5 class="University">Maharashtra State Board 82.33 %</h5><hr>&nbsp;
+                <h4 class="degree">SSC 2019</h4><br>
+                <h5 class="University">Maharashtra State Board 63.20 %</h5><hr>
+            </p>
             <div class="btn-box">
                 <a href="#" class="btn">Read More!</a>
             </div>
         </div>
       </section>
 
-           <!-- services section -->
+           <!-- roles section -->
         <section id="services" class="services">
-            <div class="main-text scroll-scale">
+            <div class="main-text scroll-scale role">
                 <span>What i will do for you</span>
-                <h2>Our Services</h2>
+                <h2>My Roles</h2>
             </div>
 
             <div class="section-services scroll-bottom">
                 <div class="service-box">
                     <i class='bx bxs-layer service-icon' ></i>
-                    <h3>Web Developer</h3>
-                    <p>Web designing is my favorite</p>
+                    <h3>Full-Stack Web Developer</h3>
+                    <p>I will develop a Full-Stack website or Web-Application<br> using programing languages like c# and frameworks like Asp.net and database</p>
+                    <div class="btn-box service-btn">
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            <!-- 2---------------------------------- -->
+                <div class="section-services scroll-bottom">
+                    <div class="service-box">
+                        <i class='bx bxs-layer service-icon' ></i>
+                        <h3>Dot net Developer</h3>
+                        <p>Creating projects using DotNet Technology<br> include programing language C# and frameworks Asp.Net and MVC</p>
+                        <div class="btn-box service-btn">
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+    
+<!-- 3------------------------------------ -->
+                <div class="section-services scroll-bottom">
+                    <div class="service-box">
+                    <i class='bx bxl-html5 service-icon' ></i>
+                    <h3>Front-End Developer</h3>
+                    <p>I will create Attractive user Interface Webpages that used in website to look Attractive using languages HTML,CSS,Javascript,React </p>
+                    <div class="btn-box service-btn">
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+<!-- 4---------------------------------------- -->
+                <div class="section-services scroll-bottom">
+                    <div class="service-box">
+                    <i class='bx bxs-data service-icon' ></i>
+                    <h3>Database Management</h3>
+                    <p>I will manage database  using database tools like <br>MySql and SQL server .etc</p>
                     <div class="btn-box service-btn">
                         <a href="#" class="btn">Read More</a>
                     </div>
                 </div>
 
-                <!-- <div class="service-box">
-                    <i class='bx bxl-youtube service-icon' ></i>
-                    <h3>Youtuber</h3>
-                    <p>Web designing is my favorite</p>
-                    <div class="btn-box service-btn">
-                        <a href="#" class="btn">Read More</a>
-                    </div>
-                </div> -->
 
                 
             </div>
         </section>   
              <!-- Skill section -->
         <section id="skills" class="skills">
-            <div class="main-text scroll-scale">
+            <div class="main-text scroll-scale skill">
                 <span>Technical and professional</span>
                 <h2>My Skills</h2>
             </div>
@@ -223,7 +264,27 @@
 
                     <div class="skill-bar">
                         <div class="info">
-                            <p>React.js</p>
+                            <p>Asp.Net</p>
+                            <p>82%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="react"></span>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p>MVC</p>
+                            <p>72%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="react"></span>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="info">
+                            <p>React</p>
                             <p>62%</p>
                         </div>
                         <div class="bar">
@@ -242,7 +303,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="skill-right scroll-scale">
+                <div class="skill-right scroll-scale">
                     <h3>Professional Skills</h3>
                     <div class="professional">
                         <div class="box">
@@ -255,22 +316,22 @@
                         </div>
 
                         <div class="box">
-                            <div class="circle" data-dots="80" data-percent="90">
+                            <div class="circle" data-dots="80" data-percent="80">
                             </div>
                             <div class="text">
-                                <big>90%</big>
+                                <big>80%</big>
                                 <small>Creativity</small>
                             </div>
                         </div>
 
 
                         <div class="box">
-                            <div class="circle" data-dots="80" data-percent="98">
+                            <div class="circle" data-dots="80" data-percent="78">
                             </div>
                             <div class="text">
-                                <big>98%</big>
+                                <big>78%</big>
                                 <small>Project Management</small>
-                            </div>
+                            </div><br><hr>
                         </div>
                         <div class="box">
                             <div class="circle" data-dots="80" data-percent="92">
@@ -278,10 +339,40 @@
                             <div class="text">
                                 <big>92%</big>
                                 <small>Communication</small>
-                            </div>
+                            </div><br><hr>
                         </div>
+                        
+                        
+                    </div> 
+                    <div class="skill-end scroll-scale">
+                        <h3>Devlopment Tools</h3>
+                        <div class="resume-detail skills">
+                        <div class="resume-list">
+                            
+                            <div class="resume-item">
+                                <i class="bx bxl-github"></i>
+                                <span>Github</span>
+                            </div>
+                            <div class="resume-item">
+                                <i class='bx bxl-visual-studio'></i>
+                                <span>VS Studio</span>
+                            </div>
+                            <div class="resume-item">
+                                <i class="bx bxs-data"></i>
+                                <span>Sql</span>
+                            </div>
+                            <div class="resume-item">
+                                <i class='bx bxl-python' ></i>
+                                <span>Python IDE</span>
+                            </div>
+                            
+                        </div></div>
                     </div>
-                </div> -->
+                
+
+                    
+                </div> 
+                
             </div>
         </section>
 
@@ -295,34 +386,35 @@
             <div class="container">
                 <div class="filler-buttons scroll-scale">
                     <button class="button" data-filter="all">All</button>
+                    <button class="button"data-filter=".web">Web Application</button>
                     <button class="button"data-filter=".website">Website</button>
                     <button class="button"data-filter=".front">Frontend</button>
-                    <button class="button"data-filter=".web">Web Application</button>
+                    
                 </div>
                 <div class="portfolio-gallery scroll-bottom">
-                    <div class="port-box mix website">
+                    
+                    <div class="port-box mix web">
                         <div class="port-image">
-                            <img src="images--main/1.jpg" alt="">
+                            <img src="images--main/ChotuRestourant.png" alt="">
                         </div>
                         <div class="port-content">
-                            <h3>Website</h3>
-                            <p>this is my project</p>
+                            <h3>Web-Application</h3>
+                            <p>Online Food Order</p>
                             <a href="#"><i class='bx bx-link-external'></i></a>
                         </div>
                     </div>
 
-
-                    <div class="port-box mix website">
+                    
+                    <div class="port-box mix web">
                         <div class="port-image">
-                            <img src="images--main/myportfolio.png" alt="">
+                            <img src="images--main/collegeresult.jpg" alt="">
                         </div>
                         <div class="port-content">
-                            <h3>Website</h3>
-                            <p>My-Portfolio</p>
+                            <h3>Web-Application</h3>
+                            <p>College Results Generator</p>
                             <a href="#"><i class='bx bx-link-external'></i></a>
                         </div>
                     </div>
-
 
                     <div class="port-box mix front">
                         <div class="port-image">
@@ -336,37 +428,37 @@
                     </div>
 
 
-                    <div class="port-box mix front">
+                    <div class="port-box mix website">
                         <div class="port-image">
-                            <img src="images--main/4.jpg" alt="">
+                            <img src="images--main/wedding.png" alt="">
                         </div>
                         <div class="port-content">
                             <h3>Website</h3>
-                            <p>this is my project</p>
+                            <p>Wedding Planner Website</p>
                             <a href="#"><i class='bx bx-link-external'></i></a>
                         </div>
                     </div>
 
 
-                    <div class="port-box mix web">
+                    <div class="port-box mix website">
                         <div class="port-image">
-                            <img src="images--main/collegeresult.jpg" alt="">
+                            <img src="images--main/PersonalPortfolio.png" alt="">
                         </div>
                         <div class="port-content">
-                            <h3>Web-Application</h3>
-                            <p>College Results Generator</p>
+                            <h3>Website</h3>
+                            <p>My-Portfolio</p>
                             <a href="#"><i class='bx bx-link-external'></i></a>
                         </div>
                     </div>
 
 
-                    <div class="port-box mix web">
+                    <div class="port-box mix website">
                         <div class="port-image">
-                            <img src="images--main/6.jpg" alt="">
+                            <img src="images--main/Tours&Travels.png" alt="">
                         </div>
                         <div class="port-content">
                             <h3>Website</h3>
-                            <p>this is my project</p>
+                            <p>Tours & Travels</p>
                             <a href="#"><i class='bx bx-link-external'></i></a>
                         </div>
                     </div>
@@ -376,7 +468,7 @@
 
         <!-- Contact section ----------------------------------------->
     <section id="contact" class="contact">
-        <div class="main-text scroll-scale">
+        <div class="main-text scroll-scale contacts">
             <span>ask me question</span>
             <h2>Contact me</h2>
         </div>
@@ -399,7 +491,7 @@
         <p class="scroll-scale">Developed by Shreyas Kawale.</p>
         <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
      </footer>
-        
+    </div>  
     <script src="mixitup.min.js"></script>
     <script src="script.js"></script>
     

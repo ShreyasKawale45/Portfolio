@@ -1,3 +1,10 @@
+let loader = document.getElementById("preloader");
+window.addEventListener("load", function () {
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 1500);
+});
+
 let words = document.querySelectorAll(".word");
 words.forEach((word) => {
   let letters = word.textContent.split("");
@@ -38,25 +45,25 @@ let changeText = () => {
 changeText();
 setInterval(changeText, 3000);
 
-//circle skill----------------------------------
-// const circles = document.querySelectorAll(".circle");
-// circles.forEach((elem) => {
-//   var dots = elem.getAttribute("data-dots");
-//   var marked = elem.getAttribute("data-percent");
-//   var percent = Math.floor((dots * marked) / 100);
-//   var points = "";
-//   var rotate = 360 / dots;
+// circle skill----------------------------------
+const circles = document.querySelectorAll(".circle");
+circles.forEach((elem) => {
+  var dots = elem.getAttribute("data-dots");
+  var marked = elem.getAttribute("data-percent");
+  var percent = Math.floor((dots * marked) / 100);
+  var points = "";
+  var rotate = 360 / dots;
 
-//   for (let i = 0; i < dots; i++) {
-//     points += `<div class="points" style="--i:${i}; --rot:${rotate}deg"></div>`;
-//   }
-//   elem.innerHTML = points;
+  for (let i = 0; i < dots; i++) {
+    points += `<div class="points" style="--i:${i}; --rot:${rotate}deg"></div>`;
+  }
+  elem.innerHTML = points;
 
-//   const pointsMarked = elem.querySelectorAll(".points");
-//   for (let i = 0; i < percent; i++) {
-//     pointsMarked[i].classlist.add("marked");
-//   }
-// });
+  const pointsMarked = elem.querySelectorAll(".points");
+  for (let i = 0; i < percent; i++) {
+    pointsMarked[i].classList.add("marked");
+  }
+});
 
 //mixit portfolio section
 var mixer = mixitup(".portfolio-gallery");
@@ -78,41 +85,65 @@ window.addEventListener("scroll", activeMenu);
 //sticky navbar/////////////////////\
 const header = document.querySelector("header");
 window.addEventListener("scroll", function () {
-  header.classList.toggle("sticky", window.scrollY > 50)
-})
-
+  header.classList.toggle("sticky", window.scrollY > 50);
+});
 
 //toggle icon navbar/////////////////////\
-let menuIcon=document.querySelector("#menu-icon");
-let navlist=document.querySelector(".navlist");
+let menuIcon = document.querySelector("#menu-icon");
+let navlist = document.querySelector(".navlist");
 
-menuIcon.onclick=()=>{
+menuIcon.onclick = () => {
   menuIcon.classList.toggle("bx-x");
   navlist.classList.toggle("open");
-}
+};
 
-window.onscroll=()=>{
+window.onscroll = () => {
   menuIcon.classList.remove("bx-x");
   navlist.classList.remove("open");
-}
-
+};
 
 //parallax////////////////////////
-const observer=new IntersectionObserver((entries)=>{
-  entries.forEach((entry)=>{
-    if(entry.isIntersecting){
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
       entry.target.classList.add("show-items");
-    }else{
+    } else {
       entry.target.classList.remove("show-items");
     }
   });
 });
 
-const scrollScale=document.querySelectorAll(".scroll-scale");
-scrollScale.forEach((el)=>observer.observe(el));
+const scrollScale = document.querySelectorAll(".scroll-scale");
+scrollScale.forEach((el) => observer.observe(el));
 
-const scrollBottom=document.querySelectorAll(".scroll-bottom");
-scrollBottom.forEach((el)=>observer.observe(el));
+const scrollBottom = document.querySelectorAll(".scroll-bottom");
+scrollBottom.forEach((el) => observer.observe(el));
 
-const scrollTop=document.querySelectorAll(".scroll-top");
-scrollTop.forEach((el)=>observer.observe(el));
+const scrollTop = document.querySelectorAll(".scroll-top");
+scrollTop.forEach((el) => observer.observe(el));
+
+const iconBtn = document.querySelector("i");
+
+function myFunction() {
+  var element = document.body;
+
+  element.classList.toggle("dark");
+  element.classList.toggle("active");
+  let clone = element.cloneNode(true);
+  iconBtn.classList.toggle("bx-sun");
+  iconBtn.classList.toggle("bx-moon");
+
+  clone.classList.add("copy");
+  main.appendChild(clone);
+
+  document.body.classList.add("stop-scrolling");
+
+  clone.addEventListener("animationend", () => {
+    document.body.classList.remove("stop-scrolling");
+    element.remove();
+    clone.classList.remove("copy");
+    // Reset Variables
+    declare();
+    events();
+  });
+}
