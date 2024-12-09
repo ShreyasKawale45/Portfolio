@@ -1280,7 +1280,7 @@ footer a i {
 }
 
 .resume-detail.skills .resume-item:hover i {
-  color: var(--main-color);
+  color: var(--hover-color);
 }
 
 .skills .resume-item span {
