@@ -1285,6 +1285,10 @@ footer a i {
   color: var(--hover-color);
 }
 
+.dark .skills .resume-item:hover i{
+  color: white;
+}
+
 .skills .resume-item span {
   position: absolute;
  left: -10%;
@@ -1304,6 +1308,7 @@ footer a i {
   left: 40%;
   opacity: 1;
   transform: scale(1);
+  
 }
 
 .skills .resume-item:nth-child(4):hover span {
