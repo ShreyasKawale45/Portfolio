@@ -1012,6 +1012,12 @@ footer a i {
  
 }
 
+@media (max-width: 390px){
+  .btn-box a{
+    font-size: large;
+  }
+}
+
 
 
 /*keyframes----------------------------------------------*/
